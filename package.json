@@ -2,7 +2,7 @@
   "name": "ci-cd-practice",
   "version": "0.1.0",
   "private": true,
-   "scripts": {
+  "scripts": {
     "dev": "next dev",
     "build": "next build",
     "test": "echo \"No tests yet\" && exit 0",
@@ -27,6 +27,7 @@
     "eslint-config-next": "16.2.4",
     "husky": "^9.1.7",
     "knip": "^6.10.0",
+    "postcss": "^8.5.13",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
