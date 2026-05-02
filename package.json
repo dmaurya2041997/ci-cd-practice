@@ -2,11 +2,16 @@
   "name": "ci-cd-practice",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "test": "echo \"No tests yet\" && exit 0",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "unused": "knip",
+    "verify": "npm run lint && npm run typecheck && npm run unused && npm run build",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "16.2.4",
@@ -20,6 +25,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
+    "husky": "^9.1.7",
+    "knip": "^6.10.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
